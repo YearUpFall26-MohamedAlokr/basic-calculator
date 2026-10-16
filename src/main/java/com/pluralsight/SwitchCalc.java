@@ -2,7 +2,7 @@ package com.pluralsight;
 import java.util.Scanner;
 
 public class SwitchCalc {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the first number");
@@ -32,6 +32,7 @@ public class SwitchCalc {
                 }
                 break;
 
-    }
+        }
 
+    }
 }
