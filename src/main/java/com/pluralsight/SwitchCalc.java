@@ -3,7 +3,6 @@ import java.util.Scanner;
 
 public class SwitchCalc {
     public static void main(String[] args) {
-
         Scanner input = new Scanner(System.in);
         System.out.println("Enter the first number");
         int num1 = input.nextInt();
@@ -11,7 +10,14 @@ public class SwitchCalc {
         int num2 = input.nextInt();
         System.out.println("Enter operation + , - , * , / ");
         char operation = input.next().charAt(0);
-        double result;
+        calcSwitch(operation, num1, num2);
+
+    }
+
+
+
+    public static double calcSwitch(char operation, int num1, int num2) {
+        double result = 0;
         switch (operation) {
             case '+':
                 result = num1 + num2;
@@ -34,5 +40,6 @@ public class SwitchCalc {
 
         }
 
+        return result;
     }
 }
